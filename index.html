@@ -1,133 +1,317 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>An Evening with an Ouija Board</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        
-   <!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 10</div>
-    <img src="img/wide-overall.jpg" style="width:100%">
-    <div class="text">Feb. 8, 2020 | Valencia Apartments, San Luis Obispo | In a quiet study room at the back of the Valencia Apartment clubhouse, three friends spend their Saturday evening getting ready to use a Ouija board, a spiritualist device that is meant to allow people to communicate with the dead.</div>
-  </div>
+<html>
+	
+<head>
+	
+<!--The following displays language used in browser to interpret page -->
+<meta charset="UTF-8">
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 10</div>
-    <img src="img/close-opening.jpg" style="width:100%">
-    <div class="text">Ouija boards come in different shapes and sizes but all display the alphabet, the numbers 0-9, and short phrases like “yes,” “no,” and “goodbye.” People in the circle place both their index fingers on the planchette, a small teardrop or heart-shaped object, which moves in response to the questions asked to the spirits.</div>
-  </div>
+<!--The following line of code displays the page title on a browser tab -->
+<title>Site Title | Home</title>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 10</div>
-    <img src="img/medium-portrait.jpg" style="width:100%">
-    <div class="text">This method of communication rose in popularity after the American Civil War, when people lost many friends and relatives to battle. Though Ouija boards were used primarily only by mediums during the surgence of spiritualism, in current times it has transformed into a commercial parlor game that regular people use for a number of reasons, including for fun.</div>
-  </div>
-    
-<div class="mySlides fade">
-    <div class="numbertext">4 / 10</div>
-    <img src="img/medium-setup2.jpg" style="width:100%">
-    <div class="text">“I love this kind of stuff. Just the possibility that I could talk to someone who died! So many people have actually been able to make contact and there’s too much evidence saying it’s real. I’ve always wanted to hold a real seance, with candles, which we can’t light here unfortunately, but this is good enough,” said Luci Simpson, a Cal Poly graduate.</div>
-  </div>
-    
-    <div class="mySlides fade">
-    <div class="numbertext">5 / 10</div>
-    <img src="img/close-candles.jpg" style="width:100%">
-    <div class="text">Simpson was able to convince her friends to perform this ritual with her by winning a Super Bowl bet—they don’t share her excitement at the thought of conducting an ouija session.</div>
-  </div>
-    
-    
-    <div class="mySlides fade">
-    <div class="numbertext">6 / 10</div>
-    <img src="img/medium-setup.jpg" style="width:100%">
-    <div class="text">“I know spirits exist so I’m a little nervous. A few years ago, my mom and I scanned an old photo of my grandma and her sister as kids, and in the online version she was in the background of the house looking like she did when she died. But it wasn’t in the original,” stated Emily Cook, a 4th year Anthropology student. “It was kinda comforting but it was also legit scary.”</div>
-  </div>
-    
-    
-    <div class="mySlides fade">
-    <div class="numbertext">7 / 10</div>
-    <img src="img/medium-usingboard.jpg" style="width:100%">
-    <div class="text">UCSC student Sergey Gasparyan, on the other hand, showed up for the simple purpose of proving the game wrong. “There’s no way this is real. I’m not saying I don’t believe in ghosts, but I just don’t see how a cardboard toy made in China would ever be able to communicate with the dead,” he said. “Also I don’t really know anyone that died so if it actually works then that would be cool to see.”</div>
-  </div>
-    
-    
-    <div class="mySlides fade">
-    <div class="numbertext">8 / 10</div>
-    <img src="img/close-planchette.jpg" style="width:100%">
-    <div class="text">“Hello, spirit. We come in peace and we have some questions. Did you live in Valencia when you died?” Simpson asked the board. In the 15-minute session conducted, the spirit responded yes to living at Valencia, heart in response to why it hadn’t moved on from our world and 80J as the answer to which apartment they lived in (though Valencia apartments are numbered, not lettered).</div>
-  </div>
-    
-    
-    <div class="mySlides fade">
-    <div class="numbertext">9 / 10</div>
-    <img src="img/close-using.jpg" style="width:100%">
-    <div class="text">Despite the vague and partially inaccurate answers the board reflected, all three were surprised the planchette moved at all and accused one another of moving it on purpose. “I bet it didn’t work as well because we couldn’t light the candles in here,” Gasparyan said sarcastically.</div>
-  </div>
-    
-    
-    <div class="mySlides fade">
-    <div class="numbertext">10 / 10</div>
-    <img src="img/medium-cleanup.jpg" style="width:100%">
-    <div class="text">“I’m kinda glad it didn’t work. I don’t want to get false hope and pretend that like, they’re actually saying something to me when it could just be coincidental or fake, but I’d be out here thinking I get to talk to my grandma again. I think that would be painful,” said Cook.</div>
-  </div>
+<!--link tags are for linking to external files, in this case your CSS stylesheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+<link href="normalize.css" rel="stylesheet" type="text/css">
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--the following tag tells the browser to adjust the site according to screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The following code links to the jquery library -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<!--The following code links to the javascript file that runs the slideshow -->	
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    
+<!--The following code links to the javascript file that runs the parallax image -->    
+<script src="js/parallax.min.js"></script>
+	
+<!--The following code links to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Raleway:900|Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+<!--The following javscript runs the jquery slideshow -->
+<script type="text/javascript">
+$('#slider').cycle({});
+</script>
+
+<!--The following javascript runs the nav bar which disappears on scroll-->
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+    
+<!--Favicon - images are in a folder called 'fav'-->
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+<link rel="manifest" href="img/fav/site.webmanifest">
+<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!--End Favicon-->
+    
+<!--back to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}    
+</script>   
+</head>
+
+<body>
+
+<!--beginning of navigation section-->
+<header>
+<div class="nav-container">
+<div class="brand"><img src="img/logo.png" width="170" height="95" alt=""/></div>
+<nav>
+<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+        <li>
+          <a href="#home">Navigation</a>
+        </li>
+	   <li>
+          <a href="#gal">Photo Essay</a>
+		  </li>
+	  	<li>
+          <a href="#tl">Audio Bites</a>
+        </li>
+        <li>
+          <a href="#vid">Video</a>
+			</li>
+      <li>
+          <a href="#num">Article</a>
+			</li>
+      </ul>
+</nav>
 </div>
-<br>
+<!--closing navigation tag-->
+</header>
+<!--end of navigation section-->
+    
+<!--main image-->
+<div class="container">
+</div>
+<!--animated welcome-->
+<div class="wrapper">
+<!--animated welcome code here-->	
+</div>
+    
+<!--beginning of main content area-->
+<div class="row whiteBG">
+<h2 id="home">Welcome!</h2>
+<article>
+<p class="tab">Humans have always been fascinated by death—it's one of the few things we have no way of knowing about. So welcome to The Other Side, a site all about ghosts and spirits and communicating with them.<br></p>
+<p class="tab"><a href="#gal">Navigation</a></p>
+</article>
+</div>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-    <span class="dot" onclick="currentSlide(10)"></span>
-</div>   
+<!--beginning of slideshow section-->
+<div class="row blueBG"><!--beginning of row-->
+<h2 id="gal">An Evening with an Ouija Board</h2>
+<article><!--beginning of article-->
+<p class="tab">Three friends gather to use a ouija board, a spiritual tool that's said to help communicate with the other side of life.</p>
+<!--beginning of slideshow-->
+<div id="slider"
+data-cycle-caption="#alt-caption"
+data-cycle-caption-template="{{alt}}"
+data-cycle-fx="scrollHorz"
+data-cycle-pause-on-hover="true"
+data-cycle-speed="200">
+<div class="cycle-prev"></div>
+<div class="cycle-next"></div>
+<img src="img/wide-overall.jpg" width="100%" height="100%" alt="Feb. 8, 2020 | Valencia Apartments, San Luis Obispo | In a quiet study room at the back of the Valencia Apartment clubhouse, three friends spend their Saturday evening getting ready to use a Ouija board, a spiritualist device that is meant to allow people to communicate with the dead."/>
+<img src="img/close-opening.jpg" width="100%" height="100%" alt="Ouija boards come in different shapes and sizes but all display the alphabet, the numbers 0-9, and short phrases like “yes,” “no,” and “goodbye.” People in the circle place both their index fingers on the planchette, a small teardrop or heart-shaped object, which moves in response to the questions asked to the spirits."/>
+<img src="img/medium-portrait.jpg" width="100%" height="100%" alt="This method of communication rose in popularity after the American Civil War, when people lost many friends and relatives to battle. Though Ouija boards were used primarily only by mediums during the surgence of spiritualism, in current times it has transformed into a commercial parlor game that regular people use for a number of reasons, including for fun."/>
+<img src="img/medium-setup2.jpg" width="100%" height="100%" alt="“I love this kind of stuff. Just the possibility that I could talk to someone who died! So many people have actually been able to make contact and there’s too much evidence saying it’s real. I’ve always wanted to hold a real seance, with candles, which we can’t light here unfortunately, but this is good enough,” said Luci Simpson, a Cal Poly graduate."/>
+<img src="img/close-candles.jpg" width="100%" height="100%" alt="Simpson was able to convince her friends to perform this ritual with her by winning a Super Bowl bet—they don’t share her excitement at the thought of conducting an ouija session"/>
+<img src="img/medium-setup.jpg" width="100%" height="100%" alt="“I know spirits exist so I’m a little nervous. A few years ago, my mom and I scanned an old photo of my grandma and her sister as kids, and in the online version she was in the background of the house looking like she did when she died. But it wasn’t in the original,” stated Emily Cook, a 4th year Anthropology student. “It was kinda comforting but it was also legit scary.”"/>
+<img src="img/medium-usingboard.jpg" width="100%" height="100%" alt="UCSC student Sergey Gasparyan, on the other hand, showed up for the simple purpose of proving the game wrong. “There’s no way this is real. I’m not saying I don’t believe in ghosts, but I just don’t see how a cardboard toy made in China would ever be able to communicate with the dead,” he said. “Also I don’t really know anyone that died so if it actually works then that would be cool to see.”"/>
+<img src="img/close-planchette.jpg" width="100%" height="100%" alt="“Hello, spirit. We come in peace and we have some questions. Did you live in Valencia when you died?” Simpson asked the board. In the 15-minute session conducted, the spirit responded yes to living at Valencia, heart in response to why it hadn’t moved on from our world and 80J as the answer to which apartment they lived in (though Valencia apartments are numbered, not lettered)"/>
+<img src="img/close-using.jpg" width="100%" height="100%" alt="Despite the vague and partially inaccurate answers the board reflected, all three were surprised the planchette moved at all and accused one another of moving it on purpose. “I bet it didn’t work as well because we couldn’t light the candles in here,” Gasparyan said sarcastically."/>
+<img src="img/medium-cleanup.jpg" width="100%" height="100%" alt="“I’m kinda glad it didn’t work. I don’t want to get false hope and pretend that like, they’re actually saying something to me when it could just be coincidental or fake, but I’d be out here thinking I get to talk to my grandma again. I think that would be painful,” said Cook"/>
+</div><!--end of slideshow-->
+<!--beginning of slideshow caption-->
+<div id="alt-caption" class="center">
+</div><!--end of slideshow caption-->
+<p class="tab"><a href="#tl">Navigation</a></p>
+</article><!--end of article-->
+</div><!--end of row-->
+<!--end of slideshow section-->
+	
+<!--beginning of audio section-->
+<div class="row whiteBG">
+<h2 id="tl">Heading</h2>
+<article>
+  <p class="tab">Click on images to hear about people's experiences getting signs from the departed.<br>(Double-click to pause audio)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_1">
+    <source src="audio/audio1.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_2">
+    <source src="audio/audio2.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_3">
+	<source src="audio/audio3.mp3" type="audio/mpeg" />
+</audio>
         
-        <script>var slideIndex = 1;
-showSlides(slideIndex);
+<img src="img/rollover/person1a.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/person1.jpg'" onMouseOut="this.src='img/rollover/person1a.gif'" onClick="document.getElementById('audio_1').play(); return false;" onDblClick="document.getElementById('audio_1').pause(); return false;">
+ /&gt; 
+            
+<img src="img/rollover/person2a.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/person2.jpg'" onMouseOut="this.src='img/rollover/person2a.gif'" onClick="document.getElementById('audio_2').play(); return false;" onDblClick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;
+            
+<img src="img/rollover/person3a.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/person3.jpg'" onMouseOut="this.src='img/rollover/person3a.gif'" onClick="document.getElementById('audio_3').play(); return false;" onDblClick="document.getElementById('audio_3').pause(); return false;">
+/&gt;
+	</div>
+</div>
+<p class="tab"><a href="#vid">Navigation</a></p>		
+</article>
+</div>
+<!--end of audio section-->
+    
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/flowerparallax.jpg">
+</div>
+<!--end of parallax image-->
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+<!--beginning of video section-->
+<div class="row orangeBG">
+<h2 id="vid">Heading</h2>
+<article>
+<p class="tab">Blurb</p>	
+<video width="100%" height="100%" poster="img/posterz.jpg" controls>
+<source src="audio/JOUR410HutchisonInterview.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="tab"><a href="#num">Navigation</a></p>
+</article>
+</div>
+<!--end of video section-->
+
+<!--beginning of infographic section-->
+<div class="row whiteBG">
+<h2 id="num">Heading</h2>
+<article>
+<p class="tab"></p>
+<!--infographic embed code here-->
+</article>
+</div>
+<!--end of infographic section-->
+	
+<!--beginning of footer-->
+<footer>Site Name Here | San Luis Obispo, CA | <a href="mailto: email@email.com?Subject=Inquiry" target="_top">Send Email</a> | Copyright 20__ | Site by You 
+</footer>
+<!--end of footer-->
+	
+</body>
+	
+<!--the following script controls the responsive navigation-->
+<script>
+	(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+	<script>
+	var headertext = [];
+var headers = document.querySelectorAll("#miyazaki th"),
+tablerows = document.querySelectorAll("#miyazaki th"),
+tablebody = document.querySelector("#miyazaki tbody");
+for(var i = 0; i < headers.length; i++) {
+	var current = headers[i];
+	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
 }
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	for (var j = 0, col; col = row.cells[j]; j++) {
+		col.setAttribute("data-th", headertext[j]);
+	}
 }
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}</script>
-    </body>
+</script>
+	
+	<!----Prevents audio tracks from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
 
 </html>
-
-
-
-

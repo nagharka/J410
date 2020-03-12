@@ -1,107 +1,436 @@
-* {box-sizing:border-box}
+/* CSS Document */
+
+/*----------------PARALLAX IMAGE-----------------*/
+.parallax {
+	min-height: 450px;
+	background: transparent;
+	padding-top: 35px;
+}
 
 body {
-   background-color: cadetblue;
+	color: black; /*(default font color for the entire page)*/
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: 300; /*(font thickness)*/
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 900px;
-  position: relative;
-  margin-top:5%;
-    margin-left:auto;
-        margin-right:auto;
-    border-radius: 25px;
+/*----------------navigation section-----------------*/
+header {
+	height: 105px; /*(height of nav bar)*/
+	position: fixed; /*(keeps nav bar visible when scrolling)*/
+	width: 100%;
+	top: 0;
+	z-index: 5; /*(ensures nav bar appears in front of other elements)*/
+	font-size: 0.9em;
+    transition: top 0.2s ease-in-out;
+    background-color: white;
+    background-image: url(img/logoA.jpg)
+    opacity: 0.75;
+    font-family: "Century Gothic", sans-serif;
+    text-transform: uppercase
 }
 
+/*----------------navigation container-----------------*/
+.nav-container {
+  margin: 0 auto;
+}
 
+/*----------------text-based logo-----------------*/
+.brand {
+    padding: 8px 0 8px 40px;
+    float: left;
+}
 
-/* Hide the images by default */
-.mySlides {
+/*----------------mobile navigation--------------------*/
+.nav-mobile {
   display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: indigo;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: whitesmoke;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
-    background-color: none
-    font-family: "Times New Roman"
-    
-
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: indigo;
-  font-size: 14px;
-  padding: 8px 12px;
   position: absolute;
   top: 0;
+  right: 0;
+  background: #ffffff;
+  height: 70px;
+  width: 70px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+/*----------------navigation buttons-----------------*/
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 105px;
+    background-color: white;
+    color: #015266;
+    text-decoration: none;
+	font-weight: normal;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background-color: #78a0bf;
+    color: white;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 5;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}	
+
+a.text:link, a.text:visited {
+    background-color: #78A0BF;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+}
+a.text:hover, a.text:active {
+    background-color: white;
+    color: black;
+}
+.row a{
+	color: black;
+    font-family: "Century Gothic",sans-serif;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    padding-right: 2rem;
+    border-radius: 30px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 175px;
+    letter-spacing: .3px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: initial;
+    background: url(img/arrow.png) #78a0bf;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 96%;
+	text-decoration: none;
+}
+.row a:hover{
+	    background-color: #A36A96;
+    color: initial;
+	    text-decoration: none;
+    transition: all 0.3s ease-in 0s;
+}
+/*----------------media queries-----------------*/
+
+/*If device width is less than or equal to 800px, then do ...*/
+@media only screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 35px !important;
+    }
+  .nav-mobile {
+    display: block;
+      background-color: white;
+      opacity: 0.75;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+    background-color: white;
+    opacity: 0.75;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  } 
+    
+  .brand {
+	position: absolute;
+	padding-left: 80px;
+	float: left;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: small;
+  }
+	
+	.image2 {
+	cursor:pointer;
+	width: 90%;
+	height: 90%;
+}
+	
+}
+@media screen and (min-width: 800px) {  
+    
+/*-----styles for jquery dropdown menu-----*/
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
   cursor: pointer;
-  height: 19px;
-  width: 19px;
-  margin: 0 8px;
-  background-color: whitesmoke;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #000000;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
-.active, .dot:hover {
-  background-color: indigo;
+/*----------------Main Image-----------------*/
+
+.image1 {
+	width: 100%;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.container {
+	position: relative;
+    background-image: url(img/backgroundflower.gif);
+    background-repeat: no-repeat;
+    height: 85vh;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/*----------------Main Content Area(this is where all the content below the navigation bar will go)--*/
+.row {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0; /*(centers content within the row)*/
+	position: relative;
+	padding: 65px 45px;
+    text-align: center;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+article {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 20px;
+}
+
+h1 {
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-size: 16px;
+    color: #D5DBDB;
+}
+
+h2 {
+	font-family: 'Playfair Display',serif;
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #015266;
+    -webkit-background-clip: text;
+    margin: 0;
+    line-height: initial;
+}
+
+p {
+	line-height: 1.5;
+}
+
+/*----------------SLIDESHOW-----------------*/
+
+#slider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  z-index: 1;
+  position: relative;        
+}
+
+/* prev / next links */
+.cycle-prev, .cycle-next { 
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: pointer; 
+  }
+  
+.cycle-prev { 
+  left: 0;
+  background: url(img/larrow.png) 50% 50% no-repeat;
+  }
+  
+.cycle-next { 
+right: 0;
+background: url(img/rarrow.png) 50% 50% no-repeat;
+}
+
+.cycle-prev:hover, .cycle-next:hover { 
+opacity: 1;
+filter: alpha(opacity=70)
+}
+
+
+/* captions below slideshow*/
+#alt-caption {
+    background-color: #015266;
+    color: #D5DBDB;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: .9em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*----------------VIDEO-----------------*/
+video {
+    position: relative;
+    width: 100%;    
+}
+
+/*----------------FOOTER-----------------*/
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;
+	font-size: 10px;
+}
+/*(footer links)*/
+footer a {
+	text-decoration: none; /*(nullifies underline)*/
+	color: #000000;
+	font-family: 'Century Gothic', sans-serif;
+}
+/*(link color when moused over)*/
+footer a:hover {
+	color: #A36A96;
+}
+
+/*----------------AUDIO BOARD-----------------*/
+
+.table {
+	position: relative;
+	text-align: center;
+	color: #78A0BF;
+	font-size: 0vw;
+    
+}
+
+.trip {text-align:center;}
+
+.trip img{
+  display:inline-block;
+  width:30%;
+  margin:0 1% 0 1%;
+  }
+
+.rollover {
+	cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*--------------background colors----------*/
+.whiteBG {
+	background-color: #A36A96;
+}
+
+.blueBG {
+	background-image: url(img/marble.jpg);
+}
+
+.orangeBG {
+	background-image: url(img/marble.jpg);
+}
+
+/*----------------back to top button-----------------*/
+#myBtn {
+  
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #78A0BF; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 10px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #015266;
+  opacity: 0.75;   
+}
+
+/*----menu dissapear when scroll---*/
+.nav-up {
+  top: -105px; 
 }
